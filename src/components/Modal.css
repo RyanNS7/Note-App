@@ -60,6 +60,7 @@ textarea{
     background: var(--action-button);
     color: white;
     margin: 0 2px;
+    cursor: pointer;
 }
 
 .cancel-note{
@@ -69,6 +70,7 @@ textarea{
     color: white;
     text-align: center;
     margin: 0 2px;
+    cursor: pointer;
 }
 
 textarea:focus, 

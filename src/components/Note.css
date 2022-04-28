@@ -107,7 +107,9 @@
 .note-content{
     margin: auto;
     width: 90%;
+    height: 70%;
     padding: 8px;
+    overflow: auto;
 }
 
 .finish-reading{

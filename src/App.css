@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --action-button: #017D01;
+    --delete-button: #A80302;
+    --edit-button: #515151;
+    --base-color: #8257E5;
+    --background-note: #5B00F9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.notes-configuration{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: var(--base-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.notes-configuration button{
+    width: 150px;
+    height: 50px;
+    margin-right: 4px;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons-configuration button:nth-child(1){
+    background: var(--action-button);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons-configuration button:nth-child(2){
+    background: var(--delete-button);
+}
+
+.buttons-configuration{
+    display: flex;
+    align-items: center;
+}
+
+.notes-box{
+    padding-top: 70px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clear-confirmation{
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.text-confirmation{
+    margin: auto;
+    width: 50%;
+    padding: 8px;
+}
+
+.clear-confirmation h2{
+    text-align: center;
+    font-weight: 600;
+}
+
+.inputs-confirmation{
+    text-align: end;
+    padding: 2px;
+}
+
+.clear-confirmation input{
+    width: 60px;
+    margin: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.clear-confirmation input:nth-child(1){
+    background: var(--action-button);
+}
+
+.clear-confirmation input:nth-child(2){
+    background: var(--delete-button);
+}
+
+@media screen and (max-width: 745px) {
+    .text-confirmation{
+        width: 70%;
+    }
+
+    .inputs-confirmation{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .notes-configuration button{
+        width: 50%;
+    }
+
+    .clear-confirmation{
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .inputs-confirmation input{
+        width: 55px;
+    }
+}
+
+.clear-confirmation{
+    position: absolute;
+    left: 25%;
+    top: 0%;
+    animation-name: Confirmation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes Confirmation{
+    from{
+        top: -400%;
+    }
+
+    to{
+        top: 0%;
+    }
 }

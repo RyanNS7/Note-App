@@ -1,0 +1,100 @@
+.container-modal{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note-inputs{
+    width: 400px;
+    height: 415px;
+    background: var(--base-color);
+}
+
+.note-inputs form{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+h2{
+    text-align: center;
+    padding: 4px;
+    margin: 4px;
+    color: white;
+}
+
+input,
+textarea{
+    padding: 4px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+input{
+    font-size: 20px;
+}
+
+textarea{
+    font-size: 14px;
+    resize: none;
+    height: 250px
+}
+
+.create-note{
+    width: 100px;
+    height: 30px;
+    background: var(--action-button);
+    color: white;
+    margin: 0 2px;
+}
+
+.cancel-note{
+    width: 100px;
+    height: 30px;
+    background: var(--delete-button);
+    color: white;
+    text-align: center;
+    margin: 0 2px;
+}
+
+textarea:focus, 
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+span{
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 320px){
+    .note-inputs{
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .note-inputs{
+        height: 440px;
+    }
+}

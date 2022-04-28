@@ -1,0 +1,139 @@
+.card-note{
+    width: 300px;
+    height: 190px;
+    padding: 8px;
+    background: var(--background-note);
+    color: #FFFFFF;
+    box-sizing: border-box;
+    margin: 16px 8px;
+}
+
+.title-note{
+    width: 100%;
+    height: 32px;
+    margin: 4px 0;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.title-note h3{
+    text-align: center;
+}
+
+.content-note{
+    width: 90%;
+    height: 80px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.complete-note{
+    cursor: pointer;
+}
+
+.card-note button{
+    width: 100px;
+    height: 40px;
+    border: 1px solid transparent;
+    margin: 0 4px;
+    color: #FFFFFF;
+}
+
+.notes-buttons{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+.card-note button:nth-child(1){
+    background: var(--delete-button);
+}
+
+.inputs-edit-note{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-edit{
+    width: 400px;
+    height: 340px;
+    margin: auto;
+    margin: 2px;
+    padding: 6px;
+    background: var(--base-color);
+    z-index: 1;
+}
+
+.edit-title-input,
+.edit-content-input{
+    border: 1px solid black;
+}
+
+.edit-content-input{
+    height: 150px;
+}
+
+.switch-value-input{
+    width: 70px;
+    margin: auto;
+    background: var(--action-button);
+    color: white;
+    margin: 0 2px;
+}
+.hidden{
+    display: none;
+}
+
+.reading-box{
+    width: 80%;
+    height: 80%;
+    background: var(--base-color);
+    overflow-wrap: break-word;
+}
+
+.reading-box p{
+    color: white;
+    font-size: 18px;
+}
+
+.note-content{
+    margin: auto;
+    width: 90%;
+    padding: 8px;
+}
+
+.finish-reading{
+    position: absolute;
+    left: 45%;
+    bottom: 15%;
+}
+
+.button-finish-reading{
+    color: white;
+}
+
+.cancel-edit{
+    margin: 0 2px;
+    width: 75px;
+    margin: auto;
+    background: var(--delete-button);
+    color: white;
+}
+
+.notes-buttons button:nth-child(2){
+    background: var(--edit-button);
+}
+
+@media screen and (max-width: 500px) {
+    .card-note{
+        width: 260px;
+    }
+}

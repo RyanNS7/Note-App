@@ -20,7 +20,9 @@
 <a> <a href='https://app-note-react.netlify.app/'> Test the project here <a>
 
 <h3>Technologies</h3>
- - [React.js](https://pt-br.reactjs.org/)
+<ul>
+    <li> <a href='https://pt-br.reactjs.org/'> React.js </a> </li>
+</ul>
 
 <h3 id='#Author'> Author </h3>
 

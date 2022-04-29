@@ -1,10 +1,10 @@
-Projeto de um APP de Notas
+<h1> Note App </h1>
 
-<p> <a href='#Sobre'> Sobre </a> | <a href='#Features'> Features </a> | <a href='#Author'> Author </a>  </p>
+<p> <a href='#Sobre'> Sobre </a> | <a href='#Features'> Features </a> | <a href='#Technologies'> Technologies </a> | <a href='#Author'> Author </a>  </p>
 
 <h2 id='#Sobre'>Sobre</h2>
 
-<p>  </p>
+<p> My first CRUD made in React.js  </p>
 
 
 <h3 id='#Features'> Features </h3>
@@ -17,7 +17,11 @@ Projeto de um APP de Notas
 [X] Delete Note
 <img alt='Delete Note' title='Delete Note' src='./ilustrations/Delete-Note.gif' width='400px'/>
 
+<a> <a href='https://app-note-react.netlify.app/'> Test the project here <a>
 
-<h2 id='#Author'> Author </h2>
+<h3>Technologies</h3>
+ - [React.js](https://pt-br.reactjs.org/)
+
+<h3 id='#Author'> Author </h3>
 
 Made with Ryan [See my LinkedIn](https://www.linkedin.com/in/ryanns7/)

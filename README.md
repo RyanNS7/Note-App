@@ -2,12 +2,12 @@
 
 <p> <a href='#Sobre'> Sobre </a> | <a href='#Features'> Features </a> | <a href='#Technologies'> Technologies </a> | <a href='#Author'> Author </a>  </p>
 
-<h2 id='#Sobre'>Sobre</h2>
+<h2 >Sobre</h2>
 
 <p> My first CRUD made in React.js  </p>
 
 
-<h3 id='#Features'> Features </h3>
+<h3 > Features </h3>
 [X] Create Note
 <img alt='Create Note' title='Create Note' src='./ilustrations/Create-Note.gif' width='400px' />
 [X] Read Note
@@ -17,13 +17,13 @@
 [X] Delete Note
 <img alt='Delete Note' title='Delete Note' src='./ilustrations/Delete-Note.gif' width='400px'/>
 
-<a> <a href='https://app-note-react.netlify.app/'> Test the project here <a>
+<a> <a href='https://app-note-react.netlify.app/' target='_blank'> Test the project here <a>
 
-<h3>Technologies</h3>
+<h3 >Technologies</h3>
 <ul>
     <li> <a href='https://pt-br.reactjs.org/'> React.js </a> </li>
 </ul>
 
-<h3 id='#Author'> Author </h3>
+<h3> Author </h3>
 
 Made with Ryan [See my LinkedIn](https://www.linkedin.com/in/ryanns7/)
